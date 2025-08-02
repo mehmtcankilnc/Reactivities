@@ -18,7 +18,7 @@ type Props<T extends FieldValues> = {
 } & UseControllerProps<T> &
   SelectProps;
 
-export function SelectInput<T extends FieldValues>(props: Props<T>) {
+export default function SelectInput<T extends FieldValues>(props: Props<T>) {
   const { field, fieldState } = useController({ ...props });
 
   return (

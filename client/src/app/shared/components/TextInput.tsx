@@ -8,7 +8,7 @@ import { TextField } from "@mui/material";
 
 type Props<T extends FieldValues> = {} & UseControllerProps<T> & TextFieldProps;
 
-export function TextInput<T extends FieldValues>(props: Props<T>) {
+export default function TextInput<T extends FieldValues>(props: Props<T>) {
   const { field, fieldState } = useController({ ...props });
 
   return (
